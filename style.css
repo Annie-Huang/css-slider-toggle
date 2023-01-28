@@ -37,6 +37,6 @@ input[type='checkbox'].toggle:checked + label::after {
   background-color: hsl(100, 70%, 60%);
 }
 
-input[type='checkbox'].toggle:checked + label {
-  color: red;
-}
+/*input[type='checkbox'].toggle:checked + label {*/
+/*  color: red;*/
+/*}*/
