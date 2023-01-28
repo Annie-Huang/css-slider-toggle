@@ -5,5 +5,6 @@ https://github.com/Annie-Huang/css-slider-toggle
 
 --------------------------------------------------------------
 
-Google search for 'html entity x'
+Google search for 'html entity x' and 'html entity checkmark'
 https://www.toptal.com/designers/htmlarrows/symbols/multiplication-x/
+https://www.toptal.com/designers/htmlarrows/symbols/check-mark/

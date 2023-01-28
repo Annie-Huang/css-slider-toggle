@@ -53,6 +53,7 @@ input[type='checkbox'].toggle + label::after {
   transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
 }
 input[type='checkbox'].toggle:checked + label::after {
+  content: '\2713';
   /*left: 1.075em;*/
   transform: translateX(125%);
   background-color: hsl(100, 70%, 60%);
