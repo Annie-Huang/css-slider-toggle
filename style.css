@@ -17,6 +17,14 @@ input[type='checkbox'].toggle + label::before {
   border-radius: 1em;
   margin-right: 0.25em;
 }
+input[type='checkbox'].toggle + label::after {
+  position: absolute;
+  content: '';
+  width: 1em;
+  height: 1em;
+  background-color: red;
+  border-radius: 1em;
+}
 
 input[type='checkbox'].toggle:checked + label {
   color: red;
