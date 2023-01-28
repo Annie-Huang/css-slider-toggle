@@ -9,6 +9,7 @@ input[type='checkbox'].toggle + label {
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 input[type='checkbox'].toggle + label::before {
   content: '';
@@ -17,6 +18,11 @@ input[type='checkbox'].toggle + label::before {
   background-color: hsl(0, 80%, 90%);
   border-radius: 1em;
   margin-right: 0.25em;
+}
+/* this is for tab into the input element */
+input[type='checkbox'].toggle:focus + label::before {
+  outline: 1px solid black;
+  outline-offset: 0.05em;
 }
 input[type='checkbox'].toggle:checked + label::before {
   background-color: hsl(100, 70%, 90%);
