@@ -8,21 +8,23 @@ input[type='checkbox'].toggle {
 input[type='checkbox'].toggle + label {
   display: flex;
   align-items: center;
+  position: relative;
 }
 input[type='checkbox'].toggle + label::before {
   content: '';
   width: 2em;
   height: 1em;
-  background-color: #ddd;
+  background-color: hsl(0, 80%, 90%);
   border-radius: 1em;
   margin-right: 0.25em;
 }
 input[type='checkbox'].toggle + label::after {
   position: absolute;
+  left: 0.1em;
   content: '';
-  width: 1em;
-  height: 1em;
-  background-color: red;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: hsl(0, 80%, 60%);
   border-radius: 1em;
 }
 
