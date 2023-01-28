@@ -5,6 +5,19 @@ input[type='checkbox'].toggle {
   top: -9000px;
 }
 
+input[type='checkbox'].toggle + label {
+  display: flex;
+  align-items: center;
+}
+input[type='checkbox'].toggle + label::before {
+  content: '';
+  width: 2em;
+  height: 1em;
+  background-color: #ddd;
+  border-radius: 1em;
+  margin-right: 0.25em;
+}
+
 input[type='checkbox'].toggle:checked + label {
   color: red;
 }
