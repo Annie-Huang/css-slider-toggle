@@ -32,10 +32,18 @@ input[type='checkbox'].toggle:checked + label::before {
 
 input[type='checkbox'].toggle + label::after {
   position: absolute;
-  left: 0.1em;
-  content: '';
-  width: 0.8em;
-  height: 0.8em;
+  /* Give a content for X or tick in case the customer is vision impaired */
+  content: '\2715';
+  font-size: 0.5em;
+
+  /*left: 0.1em;*/
+  /*width: 0.8em;*/
+  /*height: 0.8em;*/
+  /* Need to double up the size now we make the font-size to be 0.5em to maintain the size. The default font-size is 1em*/
+  left: 0.2em;
+  width: 1.6em;
+  height: 1.6em;
+
   background-color: hsl(0, 80%, 60%);
   border-radius: 1em;
 
