@@ -18,6 +18,8 @@ input[type='checkbox'].toggle + label::before {
   background-color: hsl(0, 80%, 90%);
   border-radius: 1em;
   margin-right: 0.25em;
+
+  transition: background-color 200ms ease-in-out;
 }
 /* this is for tab into the input element */
 input[type='checkbox'].toggle:focus + label::before {
@@ -36,6 +38,8 @@ input[type='checkbox'].toggle + label::after {
   height: 0.8em;
   background-color: hsl(0, 80%, 60%);
   border-radius: 1em;
+
+  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
 }
 input[type='checkbox'].toggle:checked + label::after {
   /*left: 1.075em;*/
