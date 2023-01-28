@@ -31,6 +31,8 @@ input[type='checkbox'].toggle:checked + label::before {
 }
 
 input[type='checkbox'].toggle + label::after {
+  display: grid;
+  place-content: center;
   position: absolute;
   /* Give a content for X or tick in case the customer is vision impaired */
   content: '\2715';
@@ -45,6 +47,7 @@ input[type='checkbox'].toggle + label::after {
   height: 1.6em;
 
   background-color: hsl(0, 80%, 60%);
+  color: white;
   border-radius: 1em;
 
   transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
