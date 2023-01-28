@@ -28,6 +28,11 @@ input[type='checkbox'].toggle + label::after {
   border-radius: 1em;
 }
 
+input[type='checkbox'].toggle:checked + label::after {
+  left: 1.075em;
+  background-color: hsl(100, 70%, 60%);
+}
+
 input[type='checkbox'].toggle:checked + label {
   color: red;
 }
