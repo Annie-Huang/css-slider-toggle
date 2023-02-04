@@ -63,3 +63,13 @@ input[type='checkbox'].toggle:checked + label::after {
 /*input[type='checkbox'].toggle:checked + label {*/
 /*  color: red;*/
 /*}*/
+
+input[type='checkbox'].toggle:disabled + label {
+  color: #777;
+}
+input[type='checkbox'].toggle:disabled + label::before {
+  background-color: #ccc;
+}
+input[type='checkbox'].toggle:disabled + label::after {
+  background-color: #777;
+}
